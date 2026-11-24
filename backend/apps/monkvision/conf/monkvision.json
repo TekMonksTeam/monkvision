@@ -2,6 +2,7 @@
     "TEKMONKS_LOGIN_BACKEND": "https://login.tekmonks.com:8443",
     "db": "/Users/rvkapoor/Documents/Programs/source/monboss/db/monboss.db",
     "queries": {
-        "barQuery": "select timestamp as x, status as y, from logs where timestamp > $from and timestamp < $to and logid=$logid"
+        "barQuery": "select timestamp as x, status as y, from logs where timestamp > $from and timestamp < $to and logid=$logid",
+        "cpuRamDisk": "SELECT timestamp, additional_status FROM logs WHERE logid = ? AND timestamp >= ? AND timestamp <= ? AND additional_status != '' ORDER BY timestamp"
     }
 }

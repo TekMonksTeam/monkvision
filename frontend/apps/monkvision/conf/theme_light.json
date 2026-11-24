@@ -14,15 +14,15 @@
         "img.logo": "top: 20px; left: 30px; width: 148px; height: 57px;",
         "span#signin": "top: 40px; right: 100px; position: absolute; font-size: 0.8em; font-weight: 500; color: #0c0d0e;",
         "span#signin > span:last-child": "color: #bd5c00; font-weight: 700; text-transform: uppercase;",
-        "span#signin > span > a":"color: inherit;"
+        "span#signin > span > a": "color: inherit;"
     },
     "login_i18n": {
-        "en":{
+        "en": {
             "title": "Monkvision Dashboards",
             "logintagline": "Monkvision Dashboards",
             "loginsubtag": "World's only enterprise-wide AI based active monitorting solution.",
             "learn": "Learn More",
-            "loginMsg":"Sign in with Tekmonks Login",
+            "loginMsg": "Sign in with Tekmonks Login",
             "tkmLogo": "./img/tkmlogodark.svg"
         }
     },
@@ -30,38 +30,33 @@
         "logo": "./img/logo_light.png",
         "aboutLink": "https://twitter.com/tekmonks/status/1061000581735702528"
     },
-    
     "main_css": {
-        "*": "@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap');",
-        "body": "font-family: 'Raleway';",
-        "div#container": "background-color: rgb(245, 247, 250); margin-left: 58px; width: calc(100vw - 58px); padding: 1em 0.5em 1em 1em;",
+        "*": "@import url('./fonts/appfonts.css');",
+        "body": "font-family: 'Red Hat Text'; color: #4C4C4C; background-color: #E5E5E5;",
+        "div#container": "background-color: #E5E5E5; margin-left: 58px; width: calc(100vw - 58px); padding: 0 0.5em 1em 0;",
         "div#maincontent": "width: 100%; height: 100%;",
-        "div#leftheader": "background-color: #202525; padding-top: 40px; width: 58px;background:linear-gradient(180deg,rgba(13,17,23,0.98),rgba(11,15,20,0.96));border-right:1px solid rgba(255,255,255,0.06);box-shadow:2px 0 16px rgba(0,0,0,0.25);backdrop-filter:blur(12px);padding-top:10px;overflow-y:auto;overflow-x:hidden;",
-        "div#leftheader > .dash-row > img.dashicon:hover": "border-radius: 5px; border-width: 0.5px; border-style: outset; border-color: white;",
-        "div#leftheader > .dash-row > img.dashicon.selected": "border-style: inset; border-radius: 5px; border-width: 0.5px; border-color: white;",
-        "div#leftheader > .dash-row > span.dashtitle": "color: white; font-size: 14px; font-weight: 500;",
-        "div#leftheader:hover": "width: 190px;",
-        "div#leftheader .dash-row:hover": "background:rgba(59,130,246,0.08);box-shadow:0 0 10px rgba(59,130,246,0.35);",
-        "div#leftheader .dash-row:hover::before": "content:'';position:absolute;left:0;top:8px;bottom:8px;width:3px;border-radius:2px;background:#3b82f6;box-shadow:0 0 6px rgba(59,130,246,0.6);",
-        "div#leftheader .dash-row .dashicon.selected": "filter:brightness(1.1) drop-shadow(0 0 6px rgba(59,130,246,0.6));",
-        "span#header": "color: #41cf70; font-family: 'Raleway';",
-        "div#leftheader .dash-row": "height:46px;padding:0 10px;gap:12px;margin:4px 0;border-radius:8px;transition:background 0.2s ease,box-shadow 0.2s ease;",
-        "div#leftheader .dash-row .dashicon": "height:28px;width:28px;",
-        "div#leftheader .dash-row .dashtitle": "color:#1f2937;font-size:14px;font-weight:500;",
-        "span#header > img#textlogo": "height: 12px; width: 100px;",
+        "div#leftheader": "width: 58px; background-color: #D9D9D9; border-right: 1px solid #DCDCDC; padding-top: 10px; overflow-y: auto; overflow-x: hidden;",
+        "div#leftheader:hover": "width: 190px; box-shadow: 2px 0 8px rgba(0,0,0,0.25);",
+        "div#leftheader .dash-row": "position: relative; height: 46px; padding: 0 10px; gap: 12px; margin: 4px 0; border-radius: 0.3em; cursor: pointer; transition: background 0.2s ease, color 0.2s ease;",
         "div#leftheader:not(:hover) .dash-row": "justify-content: flex-start; padding-left: 15px; padding-right: 0; gap: 0;",
+        "div#leftheader .dash-row .dashicon": "height: 28px; width: 28px;",
+        "div#leftheader .dash-row .dashtitle": "color: #4C4C4C; font-size: 14px; font-weight: 500;",
+        "div#leftheader .dash-row:hover": "background-color: #BC5205;",
+        "div#leftheader .dash-row:hover .dashtitle": "color: #F3F3F3;",
+        "div#leftheader .dash-row:hover .dashicon": "filter: brightness(0) invert(1);",
+        "span#header": "color: #DCDCDC; font-family: 'Red Hat Text'; background-color: #818181; padding: 0.5em 1em; margin-bottom: 0.5em; gap: 1em;",
+        "span#header > img#textlogo": "height: 12px; width: 100px; filter: brightness(0) invert(1);",
+        "span#header > span#title": "width: 300px; font-size: 0.85em; font-weight: 500; background-color: #4C4C4C; color: #DCDCDC; padding: 0.5em 0.8em; border-radius: 0.2em; border-bottom: 2px solid #BC5205;",
+        "input#datetimepickerfrom, input#datetimepickerfrom:active, input#datetimepickerto, input#datetimepickerto:active, #timepicker": "font-size: 0.8em; font-family: 'Red Hat Text'; color: #4C4C4C; background-color: #F2FAFF; border-radius: 0.4em; padding: 4px 6px; border-style: none; outline: none;",
+        "span#header > img#playpause": "height: 30px; width: 30px;",
+        "span#header img#playpause, span#header span-with-menu img, span#header > span#signoff > img": "filter: brightness(0) invert(0.86);",
         "span#header > span#signoff": "margin-right: 20px;",
         "span#header > span#signoff > img": "height: 30px; width: 30px;",
-        "span#header > span#title": "width: 300px; font-size: 0.85em; font-weight: bold; background-color: white; box-shadow: 0 0 1px rgba(34, 25, 25, 0.4); border-radius: 5px; padding: 5px; color: rgba(0,0,0,0.75);",
-        "input#datetimepickerfrom, input#datetimepickerfrom:active, input#datetimepickerto, input#datetimepickerto:active, #timepicker":
-            "font-size: 0.8em; font-family: sans-serif; color: rgba(0,0,0,0.75);border-radius: 4px; box-shadow: 0 0 1px rgba(34, 25, 25, 0.4); padding: 2px; border-style: none;",
-        "span#header > img#playpause": "height: 30px; width: 30px;"
+        "div#leftheader .dash-row:has(img.dashicon.selected)": "background-color: #E5E5E5; box-shadow: inset 3px 0 0 #BC5205;"
     },
     "main_i18n": {
         "en": {
             "title": "Monkvision Dashboards",
-            "name_dash1": "Overview",
-            "title_dash1": "Overview of the systems",
             "name_dash2": "Details",
             "title_dash2": "Detailed Charts",
             "name_dash3": "Details2",
@@ -78,41 +73,72 @@
             "additionalinfo": "Additional Information",
             "none": "None",
             "issues": "Attacks",
-            "httpGooglePie":"HTTP Google Pie",
+            "httpGooglePie": "HTTP Google Pie",
             "httpGoogle": "HTTP Google",
-            "httpGoogleBar":"HTTP Google Bar"
+            "httpGoogleBar": "HTTP Google Bar"
         }
     },
     "main_html_data": {
-        "span-with-menu#gear": "styleBody='div.menuitem:hover{background: #45d19e !important; color: white !important;} span#content > img:hover{filter: brightness(70%);transition: all 1s ease;} div#menu{margin-left: -120px;}'",
+        "span-with-menu#gear": "styleBody='div.menuitem:hover{background: #BC5205 !important; color: #F3F3F3 !important;} span#content > img:hover{filter: brightness(70%);transition: all 1s ease;} div#menu{margin-left: -120px;}'",
         "span-with-menu#gear>img": "style='height: 30px;width: 30px;vertical-align: middle;'",
-        "span-with-menu#toggle-theme": "styleBody='div.menuitem:hover{background: #45d19e !important; color: white !important;} span#content > img:hover{filter: brightness(70%);transition: all 1s ease;} div#menu{margin-left: -40px;}'",
+        "span-with-menu#toggle-theme": "styleBody='div.menuitem:hover{background: #BC5205 !important; color: #F3F3F3 !important;} span#content > img:hover{filter: brightness(70%);transition: all 1s ease;} div#menu{margin-left: -40px;}'",
         "span-with-menu#toggle-theme>img": "style='height: 30px;width: 30px;vertical-align: middle;'",
         "textlogo": "./img/textlogo_light.png",
-        "dashicon": "./img/dashicon.svg",
-        "AlertsBackground":"#ebfaf5",
-        "AlertsBackgroundLight":"#c5ffc7",
-        "TextContent": "#000000",
-        "BannerOKColors":"#ffffff,#45d19e",
-        "BannerElseColors": "#ffffff,#ff3f3fcc",
+        "dashicon": "./img/dashicon_kd.svg",
+        "AlertsBackground": "#EBECEE",
+        "AlertsBackgroundLight": "#F3F3F3",
+        "TextContent": "#4C4C4C",
+        "BannerOKColors": "#F3F3F3,#00C24E",
+        "BannerElseColors": "#F3F3F3,#EB1111",
         "BannerElseIcon": "./img/server_icon.svg",
-        "OKBarColors": "#40D59D4C:#0e8f7e",
-        "IssueBarColors": "#D43F3F4C:#af3234",
-        "GridColor": "#78787833",
-        "LabelColor": "#484848fa",
-        "yColors1": "#D43F3F4C:#af3234",
-        "yColors2": "#40D59D4C:#0e8f7e",
-        "yColors3": "#F7DC6F4C:#d4ac0d",
-        "thColor": "#fafafa",
-        "thBackground" : "#45d19e",
-        "thBoxShadowColor" : "#ff000033",
-        "trBackground" : "#ebfaf5",
+        "OKBarColors": "#00C24E4C:#00C24E",
+        "IssueBarColors": "#EB11114C:#EB1111",
+        "GridColor": "#4C4C4C1F",
+        "LabelColor": "#4C4C4C",
+        "yColors1": "#EB11114C:#EB1111",
+        "yColors2": "#00C24E4C:#00C24E",
+        "yColors3": "#BC52054C:#BC5205",
+        "thColor": "#DCDCDC",
+        "thBackground": "#4C4C4C",
+        "thBoxShadowColor": "#00000033",
+        "trBackground": "#F3F3F3",
         "exportCSVIcon": "./img/download_icon.svg",
         "themeIcon": "./img/theme_icon.svg",
-        "GridItemBackground": "#121821",
-        "GridItemColor": "rgb(244 244 244)",
-        "GridItemBorder": "0.1px solid rgba(250,250,250,0)",
-        "timeRangeMap":[{ "label":"Pick Timerange"},{ "label":"Last 1 Hour","value":"3600000"},{ "label":"Last 6 Hours","value":"21600000"},{ "label":"Last 1 day","value":"86400000"},{ "label":"Last 7 days","value":"604800000"},{ "label":"Last 30 days","value":"2592000000"}]
+        "GridItemBackground": "#EBECEE",
+        "GridItemColor": "#4C4C4C",
+        "GridItemBorder": "none",
+        "timeRangeMap": [
+            {
+                "label": "Pick Timerange"
+            },
+            {
+                "label": "Last 1 Hour",
+                "value": "3600000"
+            },
+            {
+                "label": "Last 6 Hours",
+                "value": "21600000"
+            },
+            {
+                "label": "Last 1 day",
+                "value": "86400000"
+            },
+            {
+                "label": "Last 7 days",
+                "value": "604800000"
+            },
+            {
+                "label": "Last 30 days",
+                "value": "2592000000"
+            }
+        ],
+        "LegendColor": "#4C4C4C",
+        "GridItemBottomBorder": "2px solid #BC5205",
+        "GridItemRadius": "0",
+        "GridItemShadow": "2px 2px 10px -2px rgba(0,0,0,0.25)",
+        "SeriesBorderColors": "[#BC5205],[#4A9FD4],[#00C24E],[#F5A623],[#4C4C4C],[#EB1111],[#8BB7F0],[#818181]",
+        "SeriesFillColors": "[#BC52051A],[#4A9FD400],[#00C24E00],[#F5A62300],[#4C4C4C00],[#EB111100],[#8BB7F000],[#81818100]",
+        "ChartBoxStyle": "div#container{font-family: inherit;} p#title{margin: -10px -10px 10px -10px; padding: 0.6em 1em; background-color: #4C4C4C; color: #DCDCDC; text-align: left; font-size: 0.9em; font-weight: 500;} div#content{overflow-y: hidden; height: calc(100% - 3em);}"
     },
     "pdf_report_css": {
         "*": "@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap');",
@@ -120,13 +146,12 @@
         "span#pdf-preview-header > img#download-icon": "height: 30px; width: 30px;",
         "span#pdf-preview-header > img#playpause": "height: 30px; width: 30px;",
         "span#pdf-preview-header > img#textlogo": "height: 30px; width: 160px;",
-        "input#datetimepickerfrom, input#datetimepickerfrom:active, input#datetimepickerto, input#datetimepickerto:active":
-            "font-size: 0.8em; font-family: sans-serif; color: rgba(0,0,0,0.75);border-radius: 4px; box-shadow: 0 0 1px rgba(34, 25, 25, 0.4); padding: 2px; border-style: none; pointer-events: none;",
+        "input#datetimepickerfrom, input#datetimepickerfrom:active, input#datetimepickerto, input#datetimepickerto:active": "font-size: 0.8em; font-family: sans-serif; color: rgba(0,0,0,0.75);border-radius: 4px; box-shadow: 0 0 1px rgba(34, 25, 25, 0.4); padding: 2px; border-style: none; pointer-events: none;",
         "div#pdf-preview-maincontent": "top: 120px; width: calc(95vw - 100px); height: calc(100vh - 120px); left: 100px;",
         "@media print": "div#pdf-preview-container {display: none;} div#pdf-preview-maincontent{top: unset; width: 100vw; height: 100vh; left: unset;}"
     },
     "pdf_report_i18n": {
-        "en":{
+        "en": {
             "title": "Monkvision Dashboards"
         }
     },

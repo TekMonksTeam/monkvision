@@ -105,7 +105,7 @@ async function interceptPageLoadAndPageLoadData() {
     router.addOnLoadPage(`${APP_CONSTANTS.APP_PATH}/main.html`, async data => {
         // select current dashboard icon on page load
         const dashboardsRaw = await $$.requireJSON(`${APP_CONSTANTS.APP_PATH}/conf/dashboards.json`);
-        const allDashIcons = document.querySelectorAll("div#leftheader > img.dashicon");
+        const allDashIcons = document.querySelectorAll("div#leftheader img.dashicon");   // icons sit inside .dash-row
         for (const dashIcon of allDashIcons) if (data.dash.endsWith(dashboardsRaw[dashIcon.id].split(",")[0]))
             dashIcon.classList.add("selected"); else dashIcon.classList.remove("selected");
 
@@ -118,7 +118,8 @@ async function interceptPageLoadAndPageLoadData() {
 function configureHeaderControls({timerange=true, playpause=true, themeToggle=true, settingsGear=true} = {}) {
     document.getElementById("timerange-controls")?.toggleAttribute("hidden", !timerange);
     document.getElementById("playpause")?.toggleAttribute("hidden", !playpause);
-    document.getElementById("toggle-theme")?.toggleAttribute("hidden", !themeToggle);
+    // inside the Kloudust iframe only the KD-styled light theme is used, so the dark/light toggle is hidden there
+    document.getElementById("toggle-theme")?.toggleAttribute("hidden", !themeToggle || window.self !== window.top);
     document.getElementById("gear")?.toggleAttribute("hidden", !settingsGear);
     document.getElementById("signoff")?.toggleAttribute("hidden", window.self !== window.top);
 }

@@ -9,7 +9,10 @@
 const _init = async _ => {
     await $$.require(`${APP_CONSTANTS.COMPONENTS_PATH}/chart-box/3p/chartjs2.9.4.min.js`);
     await $$.require(`${APP_CONSTANTS.COMPONENTS_PATH}/chart-box/3p/chartjs-plugin-annotation.min.js`);
-} 
+    // draw axis labels and legends in the page's (theme's) font instead of Chart.js's default Helvetica
+    const pageFont = getComputedStyle(document.body).fontFamily;
+    if (pageFont && window.Chart) Chart.defaults.global.defaultFontFamily = pageFont;
+}
 
 /**
  * Renders given data as a bar graph. 

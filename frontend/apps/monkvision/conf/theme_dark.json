@@ -14,15 +14,15 @@
         "img.logo": "top: 20px; left: 30px; width: 148px; height: 57px;",
         "span#signin": "top: 40px; right: 100px; position: absolute; font-size: 0.8em; font-weight: 500; color: #ffffff;",
         "span#signin > span:last-child": "color: #ffca36; font-weight: 700; text-transform: uppercase;",
-        "span#signin > span > a":"color: inherit;"
+        "span#signin > span > a": "color: inherit;"
     },
     "login_i18n": {
-        "en":{
+        "en": {
             "title": "Monkvision Dashboards",
             "logintagline": "Monkvision Dashboards",
             "loginsubtag": "World's only enterprise-wide AI based active monitorting solution.",
             "learn": "Learn More",
-            "loginMsg":"Sign in with Tekmonks Login",
+            "loginMsg": "Sign in with Tekmonks Login",
             "tkmLogo": "./img/tkmlogodark.svg"
         }
     },
@@ -30,7 +30,6 @@
         "logo": "./img/logo_dark.png",
         "aboutLink": "https://twitter.com/tekmonks/status/1061000581735702528"
     },
-    
     "main_css": {
         "*": "@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap');",
         "body": "font-family: 'Raleway';",
@@ -58,8 +57,6 @@
     "main_i18n": {
         "en": {
             "title": "Monkvision Dashboards",
-            "name_dash1": "Overview",
-            "title_dash1": "Overview of the systems",
             "name_dash2": "Examples",
             "title_dash2": "Example Charts",
             "name_dash3": "Details2",
@@ -75,9 +72,9 @@
             "status": "Status",
             "additionalinfo": "Additional Information",
             "none": "None",
-            "httpGooglePie":"HTTP Google Pie",
+            "httpGooglePie": "HTTP Google Pie",
             "httpGoogle": "HTTP Google",
-            "httpGoogleBar":"HTTP Google Bar"
+            "httpGoogleBar": "HTTP Google Bar"
         }
     },
     "main_html_data": {
@@ -88,10 +85,10 @@
         "textlogo": "./img/textlogo_dark.png",
         "dashicon": "./img/dashicon.svg",
         "exportCSVIcon": "./img/download_icon.svg",
-        "AlertsBackground":"#505050",
-        "AlertsBackgroundLight":"#9e9e9e",
+        "AlertsBackground": "#505050",
+        "AlertsBackgroundLight": "#9e9e9e",
         "TextContent": "#ffffff",
-        "BannerOKColors":"#ffffff,#45d19e",
+        "BannerOKColors": "#ffffff,#45d19e",
         "BannerElseColors": "#ffffff,#ff3f3fcc",
         "BannerElseIcon": "./img/server_icon.svg",
         "OKBarColors": "#40D59D4C:#0e8f7e",
@@ -102,27 +99,57 @@
         "yColors2": "#40D59D4C:#0e8f7e",
         "yColors3": "#F7DC6F4C:#d4ac0d",
         "thColor": "#fafafa",
-        "thBackground" : "#024086",
-        "thBoxShadowColor" : "#fafafa33",
-        "trBackground" : "#505050",
+        "thBackground": "#024086",
+        "thBoxShadowColor": "#fafafa33",
+        "trBackground": "#505050",
         "themeIcon": "./img/theme_icon.svg",
         "GridItemBackground": "#121821",
         "GridItemColor": "rgba(250,250,250,0.95)",
         "GridItemBorder": "0.1px solid rgba(106,106,106,0.95)",
-        "timeRangeMap":[{ "label":"Pick Timerange"},{ "label":"Last 1 Hour","value":"3600000"},{ "label":"Last 6 Hours","value":"21600000"},{ "label":"Last 1 day","value":"86400000"},{ "label":"Last 7 days","value":"604800000"},{ "label":"Last 30 days","value":"2592000000"}]
+        "timeRangeMap": [
+            {
+                "label": "Pick Timerange"
+            },
+            {
+                "label": "Last 1 Hour",
+                "value": "3600000"
+            },
+            {
+                "label": "Last 6 Hours",
+                "value": "21600000"
+            },
+            {
+                "label": "Last 1 day",
+                "value": "86400000"
+            },
+            {
+                "label": "Last 7 days",
+                "value": "604800000"
+            },
+            {
+                "label": "Last 30 days",
+                "value": "2592000000"
+            }
+        ],
+        "LegendColor": "#fafafaf2",
+        "GridItemBottomBorder": "0.1px solid rgba(106,106,106,0.95)",
+        "GridItemRadius": "10px",
+        "GridItemShadow": "0 0 1px rgba(34, 25, 25, 0.4)",
+        "SeriesBorderColors": "[#ffd11a],[#e600ac],[#66ffff],[#80FC35],[#8B0256],[#9D821F],[#9726F8],[#4C8AC0],[#FAAFAC],[#0F2ADF],[#6604E8],[#FEC175],[#D9BCA6],[#C12F2F],[#228B50],[#D9B422],[#88563F],[#C457D3],[#EAEABD],[#10897B],[#C23390],[#5E1069],[#B3C9AC],[#37AFF4],[#8C7D03],[#CB7959],[#0A614C],[#E8694A],[#CB093E],[#65105E],[#4B7A2C],[#0A8DFE],[#B11CBB],[#97A5CF],[#38FBFB],[#6D06E6],[#F14A7A],[#4436E1],[#0CA979],[#61EE53],[#1B563C],[#28464A],[#6604E8],[#FEC175],[#D9BCA6],[#C12F2F],[#228B50],[#D9B422],[#88563F],[#C457D3],[#EAEABD],[#10897B],[#C23390],[#5E1069],[#B3C9AC],[#37AFF4],[#8C7D03],[#CB7959],[#0A614C],[#E8694A],[#CB093E],[#65105E],[#4B7A2C],[#0A8DFE],[#B11CBB],[#97A5CF],[#38FBFB],[#6D06E6],[#F14A7A],[#4436E1],[#0CA979],[#61EE53],[#1B563C],[#28464A]",
+        "SeriesFillColors": "[#ffff0000],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00],[#0052d600],[#0052d600],[#ffff0000],[#66ccff00]",
+        "ChartBoxStyle": "div#content{overflow-y: hidden}"
     },
     "pdf_report_css": {
         "*": "@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap');",
         "body": "background-color: rgb(245, 247, 250); font-family: 'Raleway';",
         "span#pdf-preview-header > img#playpause": "height: 30px; width: 30px;",
         "span#pdf-preview-header > img#textlogo": "height: 30px; width: 160px;",
-        "input#datetimepickerfrom, input#datetimepickerfrom:active, input#datetimepickerto, input#datetimepickerto:active":
-            "font-size: 0.8em; font-family: sans-serif; color: rgba(0,0,0,0.75);border-radius: 4px; box-shadow: 0 0 1px rgba(34, 25, 25, 0.4); padding: 2px; border-style: none; pointer-events: none;",
+        "input#datetimepickerfrom, input#datetimepickerfrom:active, input#datetimepickerto, input#datetimepickerto:active": "font-size: 0.8em; font-family: sans-serif; color: rgba(0,0,0,0.75);border-radius: 4px; box-shadow: 0 0 1px rgba(34, 25, 25, 0.4); padding: 2px; border-style: none; pointer-events: none;",
         "div#pdf-preview-maincontent": "top: 120px; width: calc(95vw - 100px); height: calc(100vh - 120px); left: 100px;",
         "@media print": "div#pdf-preview-container {display: none;} div#pdf-preview-maincontent{top: unset; width: 100vw; height: 100vh; left: unset;}"
     },
     "pdf_report_i18n": {
-        "en":{
+        "en": {
             "title": "Monkvision Dashboards"
         }
     },
