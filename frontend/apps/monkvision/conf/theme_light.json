@@ -52,7 +52,8 @@
         "span#header img#playpause, span#header span-with-menu img, span#header > span#signoff > img": "filter: brightness(0) invert(0.86);",
         "span#header > span#signoff": "margin-right: 20px;",
         "span#header > span#signoff > img": "height: 30px; width: 30px;",
-        "div#leftheader .dash-row:has(img.dashicon.selected)": "background-color: #E5E5E5; box-shadow: inset 3px 0 0 #BC5205;"
+        "div#leftheader .dash-row:has(img.dashicon.selected)": "background-color: #E5E5E5; box-shadow: inset 3px 0 0 #BC5205;",
+        "span#header img#playpause:hover, span#header > span#signoff > img:hover": "filter: brightness(0) invert(1); transition: all 0.3s ease;"
     },
     "main_i18n": {
         "en": {
@@ -79,9 +80,9 @@
         }
     },
     "main_html_data": {
-        "span-with-menu#gear": "styleBody='div.menuitem:hover{background: #BC5205 !important; color: #F3F3F3 !important;} span#content > img:hover{filter: brightness(70%);transition: all 1s ease;} div#menu{margin-left: -120px;}'",
+        "span-with-menu#gear": "styleBody='div.menuitem:hover{background: #BC5205 !important; color: #F3F3F3 !important;} span#content > img{filter: brightness(0) invert(0.86);} span#content > img:hover{filter: brightness(0) invert(1);transition: all 0.3s ease;} div#menu{margin-left: -120px;}'",
         "span-with-menu#gear>img": "style='height: 30px;width: 30px;vertical-align: middle;'",
-        "span-with-menu#toggle-theme": "styleBody='div.menuitem:hover{background: #BC5205 !important; color: #F3F3F3 !important;} span#content > img:hover{filter: brightness(70%);transition: all 1s ease;} div#menu{margin-left: -40px;}'",
+        "span-with-menu#toggle-theme": "styleBody='div.menuitem:hover{background: #BC5205 !important; color: #F3F3F3 !important;} span#content > img{filter: brightness(0) invert(0.86);} span#content > img:hover{filter: brightness(0) invert(1);transition: all 0.3s ease;} div#menu{margin-left: -40px;}'",
         "span-with-menu#toggle-theme>img": "style='height: 30px;width: 30px;vertical-align: middle;'",
         "textlogo": "./img/textlogo_light.png",
         "dashicon": "./img/dashicon_kd.svg",
